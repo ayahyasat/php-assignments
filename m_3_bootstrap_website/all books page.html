@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All books</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="   crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=".\css.css">
+  
+  
+
+</head>
+<body>
+    
+   <!-- Navigation-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Contact us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pay</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">By Cash</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#!">By Credit Card</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+ 
+    <!-- Section-->
+    <section class=" ">
+
+        <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block " id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button my-3 ">Close &times;</button>
+    <div class="slidecontainer">
+        <b><p>Sort by price :</p></b>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+        <p>Value: <span id="demo"></span></p>
+        <button type="button" class="buttonserach">Search
+        </button>
+
+      </div>
+<br><br>
+      <b><p>Sort by categorie:</p></b>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">categorie
+            <i class="fa-solid fa-caret-down" ></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#Fantasy">Fantasy</a>
+          <a href="#Mystery">Mystery</a>
+          <a href="#Thriller">Thriller</a>
+          <a href="#Romance">Romance</a>
+          <a href="#Dystopian">Dystopian</a>
+          <a href="#Contemporary">Contemporary</a>
+
+
+        </div>
+      </div>
+
+  </div>
+
+  <div id="main">
+
+    <div class="w3-teal w-100">
+      <button id="openNav" class="w3-button w3-teal " onclick="w3_open()">&#9776;</button>
+      
+    </div>
+    
+
+        <div class="container px-4 px-lg-5 mt-5 w-50 ">
+            
+            <div class="row justify-content-center">
+            <div class="justify-content-center col-4 ">
+                <div class=" mb-5">
+                    <div class="card ">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\111.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">الفيل الأزرق</h5>
+                                <!-- Product price-->
+                                $20.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\222.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">ثلاثية غرناطة</h5>
+                             
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $14.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\333.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">الأسود يليق بك</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$25.00</span>
+                                $15.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\444.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">ساق البامبو</h5>
+                              
+                                <!-- Product price-->
+                                $15.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\555.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">في قلبي أنثى عبرية</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$25.00</span>
+                                $15.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\666.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">أحببتك أكثر مما ينبغي</h5>
+                                <!-- Product price-->
+                                $15.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\7777.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">رجال في الشمس</h5>
+                            
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="assets\8888.jpg" alt="...">
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">فلتغفري</h5>
+                               
+                                <!-- Product price-->
+                                $20.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="assets\99999.jpg" alt="...">
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">في ديسمبر تنتهي كل الأحلام </h5>
+                          
+                              <!-- Product price-->
+                              <span class="text-muted text-decoration-line-through">$20.00</span>
+                              $18.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets\555555.jpg" alt="...">
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">ذاكرة الجسد</h5>
+                        
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$20.00</span>
+                            $18.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Sale badge-->
+                  <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                  <!-- Product image-->
+                  <img class="card-img-top" src="assets\10101010.jpg" alt="...">
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">عائد إلى حيفا</h5>
+                      
+                          <!-- Product price-->
+                          <span class="text-muted text-decoration-line-through">$20.00</span>
+                          $18.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="">Your Website </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.marginLeft = "25px";
+      document.getElementById("mySidebar").style.display = "";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "";
+    }
+    </script>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+</body>
+</html>
