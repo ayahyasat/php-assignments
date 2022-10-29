@@ -1,8 +1,9 @@
 
-function yourage (age){
+do  {
+  age =prompt("Your age :");
 
   if ( age < 18){
-      alert("You are too young");
+    alert("You are too young");
     }else if (age > 35)
     {
       alert("You are too old");
@@ -15,14 +16,12 @@ function yourage (age){
      alert("Welcome to the party Mr. / Mrs " + x);
   
     }
-}
-do  {
-
-yourage(prompt("Your age :"));
 
 }
 
 while (confirm("is there anyone else?"));
+
+
 
 
 
