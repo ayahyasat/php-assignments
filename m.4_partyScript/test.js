@@ -2,10 +2,10 @@
 function yourage (age){
 
   if ( age < 18){
-      confirm("You are too young");
+      alert("You are too young");
     }else if (age > 35)
     {
-      confirm("You are too old");
+      alert("You are too old");
      } 
      
      else
