@@ -1,6 +1,7 @@
 
 do  {
   age =prompt("Your age :");
+  age = parseInt(age);
 
   if ( age < 18){
     alert("You are too young");
@@ -13,15 +14,13 @@ do  {
 
   {
       let x = prompt("Your Name :");
-     alert("Welcome to the party Mr. / Mrs " + x);
+     alert("Welcome Mr. / Mrs "  + x + " to the party ");
   
     }
 
 }
 
 while (confirm("is there anyone else?"));
-
-
 
 
 
