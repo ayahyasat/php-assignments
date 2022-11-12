@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Jane Doe",
+        "excerpt": "jane@example.com<",
+        "description": "Some text that describes me"
+    },
+    {
+        "id": 2,
+        "title": "Mike Ross",
+        "excerpt": "mike@example.com",
+        "description": "Some text that describes me"
+    },
+    {
+        "id": 3,
+        "title": "John Doe",
+        "excerpt": "john@example.com",
+        "description": "Some text that describes me"
+    }
+]
