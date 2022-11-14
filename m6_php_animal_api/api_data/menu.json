@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Home",
+        "script_name": "home.php"
+    },
+    {
+        "title": "Favorite animal",
+        "script_name": "fav_animal.php"
+    }
+]
