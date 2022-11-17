@@ -1,0 +1,129 @@
+
+html, body {
+min-height: 100%;
+}
+body, div, form, input, textarea, p { 
+padding: 0;
+margin: 0;
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 14px;
+color: #7C7C7C;
+line-height: 22px;
+}
+h1 {
+position: absolute;
+margin: 0;
+font-size: 32px;
+color: #fff;
+z-index: 2;
+}
+.testbox {
+display: flex;
+justify-content: center;
+align-items: center;
+height: inherit;
+padding: 20px;
+}
+form {
+width: 100%;
+padding: 20px;
+border-radius: 6px;
+background: #fff;
+box-shadow: 0 0 10px 0 #0411ff; 
+}
+.banner {
+position: relative;
+height: 300px;
+background-image: url("/assets/image/f6de2_design_resumepsd5.jpg");
+background-color: #7C7C7C;
+font-family: "Times New Roman", Times, serif;  
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.banner::after {
+content: "";
+background-color: rgba(0, 0, 0, 0.4);
+position: absolute;
+width: 100%;
+height: 100%;
+}
+input, textarea ,select 
+{
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+input ,select 
+{
+width: calc(100% - 10px);
+padding: 5px;
+}
+textarea , select 
+{
+width: calc(100% - 12px);
+padding: 5px;
+}
+.item:hover p, input:hover::placeholder{
+color:  rgb(0, 76, 255);
+}
+.item input:hover, .item textarea:hover {
+border: 1px solid transparent;
+box-shadow: 0 0 6px 0  rgb(0, 76, 255);
+color:  rgb(0, 76, 255);
+}
+.item {
+position: relative;
+margin: 10px 0;
+}
+
+
+ #lab label {
+ display: block;
+  padding: 10px 30px 10px 0;
+
+  }
+  #lab input {
+  width: auto;
+  margin-top: 7px;
+  margin-left: 2px;
+
+    }
+
+.btn-block {
+margin-top: 10px;
+text-align: center;
+}
+button {
+width: 150px;
+padding: 10px;
+border: none;
+border-radius: 5px; 
+background: rgb(0, 76, 255);
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+}
+button:hover {
+background:  rgb(0, 76, 255);
+}
+@media (min-width: 568px) {
+.name-item, .contact-item {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.contact-item .item {
+width: calc(50% - 8px);
+}
+.name-item input {
+width: calc(50% - 20px);
+}
+.contact-item input {
+width: calc(100% - 12px);
+}
+}
+
