@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 $info = json_decode(file_get_contents('api\information.json'));
 
@@ -17,9 +17,16 @@ if (isset($_POST['data'])) {
     $course = isset($_POST['training_course']) ? $_POST['training_course'] : null;
     $skills = isset($_POST['personal_skills']) ? $_POST['personal_skills'] : null;
     $language = isset($_POST['languages']) ? $_POST['languages'] : null;
-    $image = $_FILES['filename'];
-
-
+     
+ $image = '';
+if (!empty($_FILES)) {
+    $file_ext = substr(
+        $_FILES['filename']['type'], 
+        strpos($_FILES['filename']['type'], '/') + 1
+    ); 
+    $image = "$file_ext";
+    move_uploaded_file($_FILES['filename']['tmp_name'], "assets/image/$image");
+}
     $info[] = (object) array(
         'name' => $name,
         'major' =>  $University_major,
@@ -73,7 +80,8 @@ if (isset($_POST['data'])) {
     <header id="header">
         <div id="head" class="parallax"   parallax-speed="2">
             <h1 id="logo" class="text-center">
-                <img class="img-circle" src="./assets/image/<?= $image ?>" alt="">
+                
+                <img class="img-circle" src="assets/image/<?= $image ?>" alt="">
                 <span class="title"><?= $name ?></span>
                 <span class="tagline"> <?= $Job ?> 
                 </span>
