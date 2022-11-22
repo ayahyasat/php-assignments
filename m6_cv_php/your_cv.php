@@ -66,12 +66,13 @@ if (!empty($_FILES)) {
 
     <!-- Bootstrap -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+        <link href="./assets/style.css"  rel="stylesheet">
     <!-- Icons -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!-- Fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="./assets/StyleSheet1.css"  rel="stylesheet">
+   
 </head>
 
 <body class="home">
