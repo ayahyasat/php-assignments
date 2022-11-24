@@ -1,0 +1,94 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+header{
+	display: block;
+	padding: 8px;
+	background-color: #dddddd;
+	float: left;
+	position: top center;
+}
+
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+button {
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+
+}
+button:hover{
+	background: #6d44b8;
+}
+
+#htu-hero>div {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 16px 15px rgba(63, 64, 64, 0.80);
+  box-shadow: 0px 0px 16px 15px rgba(63, 64, 64, 0.80);
+  border-radius: 15px;
+}
+
+.htu-card-wrapper .card {
+  width: 100%;
+}
+
+.ts-seat {
+    height: 200px;
+
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.ts-seat:hover {
+    color: #fff;
+    opacity: .9;
+}
+
+.available_seat {
+    background-color: green;
+}
+
+.unavailable_seat {
+    background-color: red;
+}
