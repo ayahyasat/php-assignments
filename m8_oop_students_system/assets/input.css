@@ -1,0 +1,43 @@
+
+html, body {
+min-height: 100%;
+}
+body, div, form, input, textarea, p { 
+padding: 0;
+margin: 20px;
+outline: none;
+font-family: Roboto, Arial, sans-serif;
+font-size: 20px;
+color: #7C7C7C;
+line-height: 22px;
+
+}
+
+form {
+width: 97%;
+padding: 20px;
+margin: 30px;
+border-radius: 6px;
+background: #fff;
+box-shadow: 0 0 10px 0 #0411ff; 
+}
+input, textarea ,select 
+{
+margin-bottom: 30px;
+border: 1px solid #ccc;
+border-radius: 3px;
+
+}
+input ,select 
+{
+  padding: 7px;
+width: calc(100% - 10px);
+}
+
+
+textarea , select 
+{
+width: calc(100% - 12px);
+padding: 5px;
+
+}

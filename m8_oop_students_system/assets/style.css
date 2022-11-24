@@ -1,0 +1,39 @@
+
+html, body {
+    min-height: 100%;
+    }
+    div, input, table,td,tr { 
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    color: #7C7C7C;
+    line-height: 22px;
+    
+    }
+    table{
+        padding: 10px;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0 0 10px 0 #cecfeb; 
+        }
+
+    form {
+    margin-left: -90px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #cecfeb; 
+    }
+    
+    input
+    {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px;
+    width: calc(100% - 10px);
+    
+    }
+    
